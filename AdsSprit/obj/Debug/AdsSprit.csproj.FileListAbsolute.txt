@@ -1,0 +1,10 @@
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\AdsSprit.dll.config
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\AdsSprit.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\AdsSprit.pdb
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\Component.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\Utility.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\Component.pdb
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\bin\Utility.pdb
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\obj\Debug\AdsSprit.csprojResolveAssemblyReference.cache
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\obj\Debug\AdsSprit.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\AdsSprit\obj\Debug\AdsSprit.pdb

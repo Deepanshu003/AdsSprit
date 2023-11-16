@@ -1,0 +1,489 @@
+.SrcoSldrCn 
+    position: relative  
+    .owl-item.active
+        .imtmnVrSwn 
+            img 
+                animation: zoomin 25s ease-in infinite
+                transition: all 50s ease-in-out
+        .CntSemnSldr
+            h1 
+                -webkit-animation-duration: 1s
+                animation-duration: 1s
+                -webkit-animation-fill-mode: both
+                animation-fill-mode: both
+                animation-name: fadeInUp
+                animation-delay: 1s
+            p 
+                -webkit-animation-duration: 1s
+                animation-duration: 1s
+                -webkit-animation-fill-mode: both
+                animation-fill-mode: both
+                animation-name: fadeInLeft
+                animation-delay: 1s
+            .BtnAllSemn
+                -webkit-animation-duration: 1s
+                animation-duration: 1s
+                -webkit-animation-fill-mode: both
+                animation-fill-mode: both
+                animation-name: fadeInUp
+                animation-delay: 1s
+
+  
+    .imtmnVrSwn
+        img 
+            width: 100% 
+.CntSemnSldr
+    position: absolute 
+    left: 115px 
+    top: 50% 
+    transform: translate(0px,-50%) 
+    width: 28%   
+    text-align: center 
+    overflow: hidden   
+    @include respond-to(screen-991) 
+        width: 50% 
+        left: 20px      
+        top: 60%       
+    @include respond-to(screen-767) 
+        width: 58% 
+        left: 10px 
+                                                      
+    h1 
+        font-size: 48px 
+        font-family: $font-bold 
+        color: #ffffff 
+        font-style: italic   
+        @include respond-to(screen-991) 
+           font-size: 36px             
+        @include respond-to(screen-767)  
+           font-size: 24px                                                                                                                                        
+    p 
+        color: #ffffff 
+        font-size: 24px 
+        font-family: $font-bold
+        font-weight: 400 
+        margin: 15px 0px 20px 
+        line-height: 1.2 
+        @include respond-to(screen-991) 
+          font-size: 20px 
+          margin: 3px 0px 6px 
+        @include respond-to(screen-767) 
+          font-size: 16px    
+    .BtnAllSemn    
+        a 
+            color: #ffffff 
+            @include respond-to(screen-767)  
+               font-size: 12px  
+                
+            img 
+                width: auto 
+                display: inline-block 
+                margin-left: 5px 
+                @include respond-to(screen-767)
+                   width: 12px  
+
+.owl-theme .owl-nav.disabled+.owl-dots
+    margin-top: 0px
+    position: absolute
+    bottom: 40px
+    width: 100%
+.owl-theme .owl-dots .owl-dot span
+    background: #848484 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background: #ffffff         
+.arwmove
+    animation: downarrow 0.6s infinite alternate ease-in-out    
+
+@-webkit-keyframes downarrow 
+  0% 
+      -webkit-transform: translateX(0)
+       
+  100%
+       -webkit-transform: translateX(0.4em)                     
+
+.fadeInUp 
+    -webkit-animation-name: fadeInUp 
+    animation-name: fadeInUp     
+
+@keyframes fadeInUp 
+    0% 
+        opacity: 0
+        -webkit-transform: translate3d(0, 100%, 0)
+        transform: translate3d(0, 100%, 0)
+    
+    to 
+        opacity: 1
+        -webkit-transform: translateZ(0)
+        transform: translateZ(0)
+
+@keyframes zoomIn 
+    0% 
+        opacity: 0
+        -webkit-transform: scale3d(0.2, 0.2, 0.2)
+        transform: scale3d(0.2, 0.2, 0.2)
+    
+    50% 
+        opacity: 1
+    
+@keyframes fadeInLeft 
+    0% 
+        opacity: 0
+        -webkit-transform: translate3d(-100%, 0, 0)
+        transform: translate3d(-100%, 0, 0)
+    
+    to 
+        opacity: 1
+        -webkit-transform: translateZ(0)
+        transform: translateZ(0)
+
+@-webkit-keyframes fadeIn 
+    0% 
+        opacity: 0
+    
+    to 
+        opacity: 1
+    
+@-webkit-keyframes zoomin 
+  0% 
+      transform: scale(1)
+  50% 
+      transform: scale(1.2)
+  100% 
+      transform: scale(1)
+
+@keyframes zoomin 
+  0% 
+      transform: scale(1)
+  50% 
+      transform: scale(1.2) 
+  100% 
+      transform: scale(1)
+
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout 
+  0% 
+      transform: scale(1)
+  50% 
+      transform: scale(0.67)
+  100% 
+      transform: scale(1)
+
+@keyframes zoomout 
+  0% 
+      transform: scale(1)
+  50% 
+      transform: scale(0.67)
+  100% 
+      transform: scale(1)
+
+@keyframes fadeInDown 
+    0% 
+        opacity: 0
+        -webkit-transform: translate3d(0, -100%, 0)
+        transform: translate3d(0, -100%, 0)
+    
+    to
+        opacity: 1
+        -webkit-transform: translateZ(0)
+        transform: translateZ(0)
+    
+
+.OurStrmnVr
+    width: 100% 
+    position: relative    
+    padding: 75px 0px 
+    @include respond-to(screen-991) 
+        padding: 40px 0px 
+    @include respond-to(screen-767) 
+        padding: 25px 0px     
+    .CntTltTtle
+        width: 80% 
+        position: relative 
+        display: block 
+        margin: 0 auto 
+        text-align: center 
+        .ac span
+            animation: none 
+        small 
+            font-size: 16px 
+            font-style: italic 
+            font-family:  $font-bold 
+        h3 
+            font-size: 36px 
+            color: #000 
+            font-family:  $font-bold 
+            @include respond-to(screen-767)
+               font-size: 24px 
+        p
+            font-size: 18px 
+            line-height: 26px
+            margin: 10px 0px  
+            font-family:  $font-bold   
+        .BtnAllSemn
+            margin-top: 20px
+            @include respond-to(screen-767)
+                margin-top: 5px 
+            a 
+                font-family:  $font-bold  
+                text-transform: uppercase 
+                // font-weight: 600 
+                @include respond-to(screen-767)
+                    font-size: 14px 
+                img 
+                    filter: invert(1) 
+    .Cl12SemnvrTuv
+        display: flex 
+        justify-content: space-between 
+        align-items: center 
+        width: 70% 
+        margin: 0 auto 
+        margin-top: 50px 
+        transition: all 2s ease
+        @include respond-to(screen-991)
+            margin-top: 40px 
+        @include respond-to(screen-767) 
+            margin-top: 15px 
+            width: 100%    
+            align-items: baseline   
+        .cl10navSemnvr
+            img 
+                width: 100% 
+
+section.AnimateSec.activeAnimte
+    .OurStrmnVr                
+        .CntTltTtle
+            .ac span
+                animation: rollIn 0.3s forwards 
+                &:nth-child(1) 
+                    animation-delay: 0.05s
+                &:nth-child(2) 
+                    animation-delay: 0.1s
+                &:nth-child(3) 
+                    animation-delay: 0.15s 
+                &:nth-child(4) 
+                    animation-delay: 0.2s
+                &:nth-child(5) 
+                    animation-delay: 0.25s
+                &:nth-child(6) 
+                    animation-delay: 0.3s
+                &:nth-child(7) 
+                    animation-delay: 0.35s 
+                &:nth-child(8) 
+                    animation-delay: 0.35s                            
+
+    .Cl12SemnvrTuv
+        width: 100% 
+
+
+.ExplreYurBrns
+    width: 100% 
+    position: relative        
+    display: block 
+    .TleMnvr
+        display: block 
+        width: 50%
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 70px 
+        @include respond-to(screen-991)
+            width: 75% 
+            margin: 0 auto 
+            margin-bottom: 40px 
+        @include respond-to(screen-767) 
+            width: 100% 
+            margin-bottom: 18px 
+                
+        h5 
+            font-size: 36px 
+            color: #000000 
+            // font-weight: 600 
+            font-family: $font-bold 
+            text-transform: uppercase  
+            @include respond-to(screen-767)
+               font-size: 24px 
+               line-height: 1 
+               margin-bottom: 8px 
+        p 
+            font-size: 16px 
+            color: #000000 
+            font-family: $font-bold 
+    .cl12WskySwnmn
+        display: flex 
+        justify-content: space-between 
+        flex-wrap: wrap 
+        width: 100% 
+        .cl6mnvrSet
+            width: 48% 
+            position: relative 
+            margin-bottom: 45px 
+            overflow: hidden
+            @include respond-to(screen-767)
+                width: 100% 
+                margin-bottom: 20px 
+            .Brnsclimg
+                width: 100% 
+                position: relative 
+                line-height: 0 
+                img 
+                    width: 100%
+            .EngWhsyMntSevr
+                position: absolute
+                top: 50%
+                transform: translate(0px, -50%)
+                left: 40px   
+                @include respond-to(screen-767)     
+                   left: 15px 
+                p 
+                    color: #ffffff
+                    font-size: 24px 
+                    font-weight: 500 
+                    font-family: $font-bold 
+                    font-style: italic 
+                    @include respond-to(screen-767)
+                       font-size: 20px 
+                h3 
+                    font-size: 48px 
+                    color: #ffffff 
+                    font-family: $font-bold 
+                    text-transform: uppercase 
+                    @include respond-to(screen-991)
+                       font-size: 30px 
+                    @include respond-to(screen-767)
+                       font-size: 24px     
+                .BtnAllSemn 
+                    margin-top: 40px 
+                    a 
+                        color:  #ffffff 
+                        text-transform: uppercase  
+                        @include respond-to(screen-767)
+                           font-size: 13px  
+                    
+
+.FlwDrecmn
+    width: 100% 
+    position: relative
+    display: block 
+    height: 80vh 
+    margin-bottom: 50px
+    @include respond-to(screen-991)
+        height: 55vh 
+        margin-bottom: 45px 
+    @include respond-to(screen-767) 
+        margin-bottom: 30px         
+    .DRcmnmsgSecmn
+        display: block 
+        width: 100% 
+        height: 100% 
+        position: relative 
+        @include respond-to(screen-767) 
+           background-image: none !important
+        &:after   
+            @include aftrBeforBX(100%,100%,auto,0,0,0) 
+            background-image: linear-gradient(to right, #000000b0 , transparent)     
+
+        img 
+            width: 100% 
+            height: 100%  
+            object-fit: cover
+            @include respond-to(screen-767) 
+               display: block !important
+    .DrcCmtMsvr        
+        position: absolute
+        top: 50%
+        transform: translate(0px, -50%)
+        left: 100px
+        width: 40% 
+        @include respond-to(screen-991)
+           width: 65% 
+           left: 65px 
+        @include respond-to(screen-767) 
+           width: 90% 
+           left: 15px 
+        img 
+            @include respond-to(screen-767)
+               width: 20px 
+        h3 
+            font-size: 48px 
+            color: #ffffff 
+            font-family: $font-bold 
+            @include respond-to(screen-767)
+               font-size: 28px 
+               line-height: 1 
+        p 
+            img 
+                width: 30px
+                position: absolute
+                left: 0
+                top: -11px 
+            font-size: 16px
+            color: #ffffff
+            font-weight: 300
+            padding-left: 0px
+            position: relative
+            margin-top: 10px  
+            font-family: $font-bold 
+            line-height: 20px 
+        small 
+            display: block
+            position: relative
+            width: 100%
+            color: $white
+            font-family: $font-bold 
+            font-size: 24px
+            line-height: 30px
+            margin: 20px 0 10px 
+            @include respond-to(screen-767)
+               margin: 5px 0px 5px 
+               font-size: 22px 
+        em 
+            display: block
+            position: relative
+            width: 100%
+            color: $white
+            font-family: $font-bold 
+            font-size: 13px
+            line-height: 5px
+
+.SldrPgrAds
+    .owl-theme .owl-nav.disabled + .owl-dots 
+        @include respond-to(screen-767) 
+           bottom: 0px 
+    .owl-theme .owl-dots .owl-dot span
+        @include respond-to(screen-767)
+           margin: 3px 3px 
+           width: 8px 
+           height: 8px 
+
+.CmnPage.SldrPgrAds 
+    @include respond-to(screen-767)
+       height: 40vh 
+       .SrcoSldrCn 
+           height: 100% 
+           position: relative
+           .owl-stage-outer
+               height: 100% 
+               .owl-stage
+                   height: 100% 
+               .owl-item 
+                   height: 100% 
+                   .imtmnVrSwn
+                       height: 100% 
+                       .ImgSurmn
+                           height: 100% 
+                           img
+
+                               height: 100% 
+                               object-fit: cover 
+
+
+
+
+
+
+    
+
+
+
+
+   

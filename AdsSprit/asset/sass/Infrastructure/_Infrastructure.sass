@@ -1,0 +1,636 @@
+.IfrCtSwMnVr
+    .InfrActyeMnu
+        .ProBnrSemn
+            .BnseSeSwnMnvr
+                position: relative
+                @include respond-to(screen-420)
+                    img.cloud2
+                        height: 200px
+                        object-fit: cover
+                &:before 
+                    position: absolute 
+                    left: 0 
+                    right: 0 
+                    top: 0 
+                    bottom: 0 
+                    width: 100% 
+                    height: 100% 
+                    content: ''  
+                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.60%), #44620f00)
+
+
+.InsftMn
+    position: relative 
+    display: block 
+    padding: 80px 0px 
+    @include respond-to(screen-991)
+       padding: 24px 0px 
+    .InfrtureViwe
+        width: 100% 
+        position: relative 
+        display: block  
+        .InfTrCl12mnvr
+            display: flex 
+            @include respond-to(screen-991)
+                width: 100%
+            @include respond-to(screen-767) 
+               flex-wrap: wrap    
+            .qc-iamge      
+                @include respond-to(screen-991)
+                    width: 48%   
+                    img 
+                        width: 100% 
+                @include respond-to(screen-767) 
+                    width: 100%          
+            .clsmvr6vr
+                margin-left: 40px 
+                @include respond-to(screen-991)
+                   width: 48%  
+                   margin-left: 25px 
+                @include respond-to(screen-767)    
+                   width: 100% 
+                   margin-left: 0px 
+        h2 
+            font-size: 36px 
+            color: #000 
+            text-transform: uppercase 
+            font-family: $font-bold 
+            margin-bottom: 40px 
+            text-align: center
+            @include respond-to(screen-991)
+               margin-bottom: 22px 
+               font-size: 28px  
+            @include respond-to(screen-767) 
+               margin-bottom: 14px 
+               font-size: 24px 
+               line-height: 1.2    
+        p 
+            text-align: justify 
+            margin-bottom: 20px 
+            font-size: 18px 
+            font-family: $font-bold 
+            line-height: 1.4 
+            &:last-child 
+                margin-bottom: 0px      
+
+
+.BckImgBreSwn    
+    width: 100% 
+    position: relative 
+    padding: 80px 0px 
+    background-color: transparent 
+    @include respond-to(screen-991)
+        padding: 40px 0px 
+    @include respond-to(screen-767)    
+        padding: 30px 0px 
+    &:before 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        background: url(../images/infra/bacimgswnvr.jpg) center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 1;
+    .InfrUnSwnvr
+        position: relative;
+        .container 
+            position: relative; 
+            h5 
+                font-size: 36px 
+                font-family: $font-bold
+                margin-bottom: 60px 
+                text-align: center 
+                text-transform: uppercase 
+                color: #fff 
+                @include respond-to(screen-991) 
+                   margin-bottom: 30px
+                @include respond-to(screen-767) 
+                   margin-bottom: 25px 
+                   line-height: 1.1 
+                   font-size: 26px       
+            .Clrptcl12Swn
+                position: relative; 
+                display: flex 
+                justify-content: space-between 
+                flex-wrap: wrap 
+                .cl6clmnvr
+                    width: 48% 
+                    position: relative;
+                    display: flex 
+                    margin-bottom: 50px 
+                    @include respond-to(screen-767)
+                        width: 100% 
+                        margin-bottom: 22px 
+                    p 
+                        font-size: 18px 
+                        color: #fff 
+                        font-family: $font-bold 
+                        opacity: 60%;
+                        line-height: 24px 
+                    .ClcntSwnvr
+                        margin-left: 50px  
+                        @include respond-to(screen-991)   
+                           margin-left: 35px 
+                        @include respond-to(screen-767)   
+                           margin-left: 15px  
+                           width: calc(100% - 90px)      
+
+
+.GlbPrsnBx
+    padding: 50px 0 80px 0px 
+    background: #fff
+    @include respond-to(screen-991)
+        padding: 15px 0 40px 0px 
+    .Aply-Wappr
+        .title
+            text-align: center 
+            margin-bottom: 70px
+            @include respond-to(screen-991) 
+                margin-bottom: 30px 
+            h4 
+                @include respond-to(screen-991) 
+                    font-size: 28px     
+             
+    .GlbMapBx
+        width: 65%;
+        margin: 0 auto; 
+        position: relative; 
+        @include respond-to(screen-767)
+            width: 100% 
+        .OwnStrBuy
+            position: absolute 
+            right: 0px 
+            top: 80px 
+            z-index: 2 
+            @include respond-to(screen-767)
+                top: 0px 
+            p 
+                font-size: 16px 
+                color: #000 
+                font-family: $font-bold 
+                margin-bottom: 10px 
+                cursor: pointer
+                @include respond-to(screen-767)
+                    font-size: 14px 
+                    margin-bottom: 5px 
+                img 
+                    width: 20px  
+                    vertical-align: middle 
+                    margin-right: 10px 
+                    @include respond-to(screen-767)
+                       margin-right: 4px 
+                       vertical-align: baseline 
+                       width: 15px 
+
+
+
+.GlbMapBx
+    .GlbMap-Wappr
+        span ,
+        img
+            display: block
+            width: 100%
+.GlbMp-MrkWppr
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    .GlbMrkBx
+        position: absolute 
+        cursor: pointer     
+            
+        span 
+            position: relative
+            display: inline-block             
+            img 
+                width: 30px
+                animation: fontbulger 2s infinite 
+                @include respond-to(screen-767)
+                    width: 18px 
+                @keyframes fontbulger 
+                    0%, 100% 
+                        transform: scale(.7)             
+                    50% 
+                        transform: scale(.8) 
+        .MrkAdrBx
+            position: absolute
+            width: 234px
+            padding: 5px 15px 
+          
+            border-radius: 0px
+           
+            top: -66px
+            left: -93px
+            display: none
+            z-index: 1
+            @include respond-to(screen-767) 
+                position: fixed 
+                padding: 5px 15px 
+                border-radius: 0px
+                top: auto 
+                left: 0 
+                display: none 
+                z-index: 12 
+                bottom: 0px
+                width: 100% 
+                background: #fff 
+                padding: 11px 0px 15px 
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22%)
+            &::before 
+                // @include aftrBeforBX(15px,15px,auto,0,-15px,50%)
+                // background: #fff
+                // border-bottom: 1px solid  #cccccc 
+                // border-right: 1px solid  #cccccc
+                // transform: rotate(45deg) translate(-50%, 0px)
+            small 
+                color: #000 
+                font-size: 24px
+                line-height: 38px
+                font-family: $font-bold  
+                text-align: center 
+                display: block 
+            address 
+                font-size: 18px
+                font-family: $font-bold 
+                line-height: 20px 
+                color: #000 
+                text-align: center 
+    .Mrk-1
+        top: 54%;
+        right: 35%;
+    .Mrk-2
+        bottom: 55%;
+        right: 33.8%;
+    .Mrk-3
+        top: 35%;
+        right: 28%;
+    .Mrk-4
+        bottom: 28%;
+        right: 52%;  
+    .Mrk-5
+        top: 14%
+        left: 32.5%
+    .Mrk-6
+        top: 16%
+        left: 23%
+    .Mrk-8
+        top: 22%
+        left: 29%    
+    .Mrk-9
+        top: 31%
+        left: 8% 
+    .Mrk-10
+        top: 29%;
+        left: 46%; 
+
+    .Mrk-11
+        top: 62%;
+        left: 45%; 
+
+    .Mrk-12
+        top: 50%;
+        left: 54%; 
+
+    .Mrk-13
+        top: 63%;
+        left: 19%;
+
+    .Mrk-14
+        bottom: 5% 
+        left: 32%;                     
+
+    .Mrk-7
+        top: 29%
+        right: 9%                          
+
+
+.ExplreYurBrns.ExpReBnrds 
+    line-height: 1.5 
+    position: relative 
+    padding: 80px 40px  
+    .TleMnvr
+        @include respond-to(screen-1140)
+           margin-bottom: 45px 
+        @include respond-to(screen-767)  
+           margin-bottom: 20px   
+
+    @include respond-to(screen-1140) 
+        padding: 40px 40px 20px  
+    @include respond-to(screen-767)  
+        padding: 30px 15px 0px     
+    p 
+        line-height: 1.5 
+        @include respond-to(screen-767)
+           line-height: 1.1  
+    h3 
+        line-height: 1.5 
+        @include respond-to(screen-767)
+          line-height: 1.1 
+    h5 
+        line-height: 1.5 
+        @include respond-to(screen-767)
+           line-height: 1.1 
+           margin-bottom: 5px 
+    .cl12WskySwnmn 
+        .cl6mnvrSet                   
+            width: 49% 
+            @include respond-to(screen-767)
+               width: 100% 
+
+.CapSevrMn
+    position: relative 
+    display: block 
+    width: 100% 
+    padding-bottom: 90px  
+    @include respond-to(screen-991) 
+        padding-bottom: 60px    
+    @include respond-to(screen-767) 
+        padding-bottom: 30px       
+    h2 
+        font-size: 36px 
+        color: #000 
+        font-family: $font-bold 
+        margin-bottom: 60px 
+        text-transform: uppercase 
+        text-align: center 
+        @include respond-to(screen-991)
+           margin-bottom: 28px
+        @include respond-to(screen-767)
+           margin-bottom: 20px  
+           font-size: 26px    
+    .ClExcplSemvr             
+        display: flex 
+        justify-content: space-around 
+        @include respond-to(screen-767)
+           flex-wrap: wrap 
+        .ClmnVeSh4
+            width: 30% 
+            border: 1px solid #eee 
+            padding: 20px 
+            @include respond-to(screen-767)
+                width: 100% 
+                margin-bottom: 15px 
+            .IcmnSevr
+                width: 100px 
+                height: 70px 
+                display: flex 
+                align-items: center 
+                justify-content: center
+                margin: 0 auto 
+                margin-bottom: 20px   
+                img 
+                    width: auto 
+                    height: 100%
+                    object-fit: contain 
+            p 
+                text-align: center;
+                line-height: 1.3;
+                color: #666    
+                font-family: $font-bold     
+
+.OrscMnrSwvr
+    position: relative 
+    display: block 
+    line-height: 0 
+    @include respond-to(screen-767)
+        height: 50vh 
+    .Imgsmvrtum
+        width: 100% 
+        position: relative; 
+        @include respond-to(screen-767)
+            height: 100%                
+        img 
+            width: 100% 
+            @include respond-to(screen-767)
+               height: 100% 
+               object-fit: cover 
+    .CntVseVrmn
+        position: absolute;
+        top: 50%;
+        width: 40%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        @include respond-to(screen-991) 
+            width: 70% 
+        @include respond-to(screen-767) 
+            width: 95%     
+        .VdeClalSec
+            width: 50px 
+            height: 50px 
+            display: flex 
+            align-items: center 
+            border-radius: 50% 
+            border: 1px solid #fff 
+            margin: 0 auto 
+            margin-bottom: 30px 
+            cursor: pointer 
+            @include respond-to(screen-991) 
+               margin-bottom: 10px 
+            @include respond-to(screen-767)
+               width: 45px 
+               height: 45px 
+            img 
+                margin: 0 auto 
+                @include respond-to(screen-767)
+                   width: 8px  
+        h4 
+            font-size: 36px
+            color: #fff 
+            font-family: $font-bold 
+            margin-bottom: 15px
+            text-transform: uppercase  
+            @include respond-to(screen-991)
+               margin-bottom: 0px 
+            @include respond-to(screen-767)
+               font-size: 26px 
+
+        p 
+            font-size: 18px 
+            color: #fff 
+            font-family: $font-bold
+            line-height: 1.3       
+
+
+.OpnPopCntct 
+    opacity: 1
+    visibility: visible 
+    &:before 
+        @include aftrBeforBX(100%,100vh,0,0,0,0) 
+    .PopTxtBx 
+        opacity: 1
+        visibility: visible
+        transition-delay: 500ms 
+        margin-top: 0px 
+
+.pop_up_vdo,.pop_up_vdo1
+    position: absolute
+    background: rgba(0, 0, 0, .93)
+    width: 100%
+    display: inline-block
+    height: 0
+    top: 0
+    z-index: -1
+    opacity: 0
+    transition: height 1s ease-in-out
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    width: 100% 
+    .vdo_onply,.vdo_onply1 
+        position: fixed
+        top: 0%
+        left: 0%
+        width: 100%
+        height: 100%
+    .vdo_onply_ad, .vdo_onply_ad1 
+        animation: mymove_opc 1s
+        animation-delay: 0s
+        animation-fill-mode: none
+        animation-delay: .5s
+        animation-fill-mode: forwards
+        opacity: 1   
+        .cls_vdo,.cls_vdo1 
+            display: inline-block
+            background: transparent
+            position: absolute 
+            border-radius: 50px
+            right: 93px 
+            font-size: 30px 
+            top: 0px  
+            color: $white 
+            z-index: 1
+            transition: all .5s ease-in-out
+            cursor: pointer
+            width: 40px 
+            height: 40px 
+            margin-top: 3px    
+            background: #000    
+            border-radius: 50%  
+            right: 9px
+            top: 9px
+            @include respond-to(screen-767)
+                width: 40px 
+                height: 40px 
+                margin-top: 3px    
+                background: #000    
+                border-radius: 50%  
+                right: 9px
+                top: 9px
+                .PopBxClsVde 
+                   display: flex 
+                   align-items: center 
+                   img 
+                       width: 20px 
+                       display: block 
+                       margin: 0 auto 
+        #iframe,#iframe1  
+            width: 100% 
+            height: 100%      
+.pop_up_vdo_opn,.pop_up_vdo_opn1
+    opacity: 1
+    z-index: 14 
+    height: 100% 
+.PopBxClsVde 
+    display: flex 
+    align-items: center 
+    img 
+        width: 20px 
+        display: block 
+        margin: 0 auto 
+        margin-top: 12px       
+.qc-iamge1
+    position: relative
+    p 
+      
+    
+        padding: 96px 50px;
+        /* margin-top: -250px; */
+        position: absolute; 
+        left: 58%;
+        top: 0%;   
+.value-bg    
+    width: 100% 
+    position: relative 
+    padding: 80px 0px 
+    background-color: transparent
+    @include respond-to(screen-991) 
+        padding: 50px 0px 10px 
+    &:before 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        background: url(../images/values/value2.png) center center no-repeat !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        opacity: 1;
+
+.IfrCtSwMnVr
+    .ProBnrSemn 
+        .OrWskWrlmn.CSRHdng 
+            @include respond-to(screen-767)
+                left: 0px 
+                top: 43% 
+                padding: 0px 18px 
+                text-align: left 
+                h1 
+                    @include respond-to(screen-767)
+                       font-size: 24px 
+                       line-height: 1.2 
+                       p 
+                           font-size: 16px 
+                           line-height: 18px 
+
+.ProBnrSemn.IntnalPge
+    .OrWskWrlmn
+        @include respond-to(screen-1140)
+          width: 40% 
+          left: 60px 
+          top: 60%
+        @include respond-to(screen-767) 
+          width: 100%;
+          left: 0px;
+          top: auto;
+          bottom: 12px; 
+        h1 
+            @include respond-to(screen-1140)
+              line-height: 1.1 
+            @include respond-to(screen-767)
+              font-size: 20px   
+
+.Contct-Wppr
+    @include respond-to(screen-991)       
+       padding: 0px 15px 
+    @include respond-to(screen-991)   
+       padding: 0px 10px 
+
+.ProBnrSemn.csrasmn
+    @include respond-to(screen-420)
+        .BnseSeSwnMnvr img 
+            height: 200px
+            object-fit: cover
+    .OrWskWrlmn.CSRHdng
+        @include respond-to(screen-991)
+           top: 72% 
+           width: 55% 
+        @include respond-to(screen-767) 
+           width: 100% 
+           top: 46% 
+           left: 0 
+           padding: 0px 10px 
+           h1 
+               font-size: 20px 
+               line-height: 1.2 
+

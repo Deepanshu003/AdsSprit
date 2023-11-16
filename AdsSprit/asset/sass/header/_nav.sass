@@ -1,0 +1,145 @@
+.MegaMenu
+    position: absolute;
+    padding: 20px 0;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    display: none 
+    opacity: 0;
+    max-height: 600px;
+    overflow: auto;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+    text-align: left;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom:  1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    @include respond-to(screen-767) 
+        display: none 
+        opacity: 1 
+        max-height: inherit 
+        height: auto 
+        position: relative 
+        visibility: visible 
+        padding: 0px 0px 
+        transition: none 
+    .MegaMenu__Inner
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 1450px;
+        margin: 0 auto;
+        padding: 0 10px; 
+        @include respond-to(screen-767) 
+            flex-wrap: wrap 
+            max-width: 100% 
+            padding: 0px 0px  
+        .Clwnav60Mn
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+            padding: 0 10px;
+            width: 55% 
+            @include respond-to(screen-767) 
+               width: 100% 
+               padding: 0px 0px 
+               flex-wrap: wrap 
+            .Linklist
+                @include respond-to(screen-767)
+                   padding-top: 0px 
+                   display: none 
+
+        .Clwnav40Mn
+            width: 40% 
+            position: relative 
+            @include respond-to(screen-767) 
+                display: none 
+            .cl12SemnvrtNavImg.hdrtrnvt
+                .cl10navSemnvr
+                    img 
+                        transform: translate(0px, 0px) 
+            .cl12SemnvrtNavImg 
+                display: flex;
+                justify-content: space-around;
+                width: 100% 
+                align-items: center  
+                 
+                .cl10navSemnvr
+                    width: 8%  
+                    overflow: hidden 
+                    &:nth-child(4) 
+                        width: 13% 
+                        img 
+                            transform: translate(0px,0px) 
+                    img 
+                        width: 100%   
+                        transform: translate(100px, 0px) 
+                        transition: all 1s ease 
+        .MegaMenu__Item--fit 
+            flex-shrink: 0;
+            margin: 20px 20px;
+            @include respond-to(screen-767)
+                margin: 0px 0px 
+                width: 100% 
+                position: relative
+            .Text--subdued
+                font-size: 11px 
+                transition: all 1s ease 
+                @include respond-to(screen-767) 
+                    font-size: 12px 
+                &:hover 
+                    margin-left: 5px 
+                &:before 
+                    content: none 
+            .Linklist
+                .Linklist__Item
+                    display: block 
+                    margin-bottom: 12px 
+                    @include respond-to(screen-767)
+                        margin-bottom: 0px 
+                    a 
+                        color: #000000;
+                        display: inline-block;
+                        font-size: 13px;
+                        padding: 5px;
+                        text-transform: capitalize 
+                        transition: all 1s ease  
+                        @include respond-to(screen-767)
+                           font-size: 11px 
+                           padding: 2px 5px 
+                        &:hover 
+                            margin-left: 5px 
+                        &:before 
+                            content: none 
+.DrpDwn
+    @include respond-to(screen-767)
+       position: relative
+       .ArwnSwn
+            border: solid #1b1b1b 
+            border-width: 0 1px 1px 0 
+            display: inline-block;
+            padding: 0px 
+            width: 12px 
+            height: 12px 
+            transform: rotate(45deg) 
+            position: absolute 
+            right: 0px 
+            top: 9px 
+       .ArwnSwnSec
+            border: solid #1b1b1b 
+            border-width: 0 1px 1px 0 
+            display: inline-block;
+            padding: 0px 
+            width: 10px 
+            height: 10px 
+            transform: rotate(45deg) 
+            position: absolute 
+            right: 3px 
+            top: 9px
+
+            

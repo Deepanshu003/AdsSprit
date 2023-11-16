@@ -1,0 +1,168 @@
+.ProBnrSemn
+    width: 100% 
+    position: relative 
+    display: block 
+    line-height: 0 
+    .BnseSeSwnMnvr
+        width: 100% 
+        position: relative 
+        display: block 
+        img 
+            width: 100% 
+    .OrWskWrlmn.CSRHdng 
+        @include respond-to(screen-991)
+            left: 45px;
+            top: 75%;  
+            h1 
+                font-size: 30px 
+                line-height: 1.2 
+                margin-bottom: 0px       
+    .OrWskWrlmn
+        position: absolute 
+        top: 50% 
+        transform: translate(0px,-50%) 
+        left: 100px 
+        width: 35% 
+        text-align: center 
+        @include respond-to(screen-1140)
+            text-align: left 
+        @include respond-to(screen-991) 
+            left: 70px 
+            top: 65%      
+        @include respond-to(screen-767)
+            position: absolute;
+            top: auto;
+            transform: none;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            bottom: 15px;
+            padding: 0px 20px;
+        h3 
+            font-size: 36px 
+            color: #ffffff 
+            font-family: $font-bold 
+            text-transform: uppercase 
+            margin-bottom: 10px 
+            @include respond-to(screen-1140) 
+               margin-bottom: 0px 
+               line-height: 1 
+            @include respond-to(screen-767) 
+               font-size: 20px 
+               margin-bottom: 2px 
+               line-height: 1            
+
+            @include respond-to(screen-767)
+               font-size: 24px 
+               margin-bottom: 0px 
+               line-height: 1 
+
+        p 
+            color: #ffffff 
+            font-family: $font-bold 
+            font-size: 18px 
+            line-height: 24px
+            @include respond-to(screen-767)
+               font-size: 16px 
+               line-height: 18px 
+
+.GerSemnSen  
+    width: 100% 
+    position: relative 
+    display: block 
+    padding: 55px 
+    @include respond-to(screen-1140) 
+        padding: 40px 10px 
+    @include respond-to(screen-767) 
+        padding: 30px 10px     
+    .cl12SemnvrtLstRyl
+        display: flex 
+        justify-content: center 
+        width: 100%  
+        flex-wrap: wrap 
+.Cl4GrSemn
+    width: 30% 
+    margin-right: 35px 
+    border: 1px solid #ebebeb 
+    padding: 30px 
+    text-align: center 
+    margin-bottom: 35px  
+    position: relative 
+    @include respond-to(screen-767)
+        padding: 20px 
+        width: 100% 
+        margin-right: 0px
+        margin-bottom: 20px 
+
+    &:hover 
+        .PrlClSemnLst
+            .ByDefultimg
+                transform: translate(0px,-100%) 
+            .HovrImgSemn
+                transform: translate(0px,-100%)    
+        .theCntSwnGen
+            .BtnAllSemn
+                a 
+                    img 
+                        width: 28px 
+
+
+    &:nth-child(3n-3) 
+        margin-right: 0px 
+    .PrlClSemnLst 
+        width: 70%            
+        height: 280px 
+        margin: 0 auto 
+        margin-bottom: 25px   
+        overflow: hidden 
+        @include respond-to(screen-1140)
+           width: 100% 
+
+        img 
+            width: auto  
+            height: 100% 
+            margin: 0 auto   
+            transition: all 1s ease 
+            @include respond-to(screen-1140)
+               width: 100% 
+               height: 100% 
+               object-fit: contain      
+    .theCntSwnGen
+        width: 100% 
+        position: relative 
+        h5 
+            font-size: 30px
+            font-family: $font-bold
+            @include respond-to(screen-991)
+               font-size: 24px
+               line-height: 1  
+        .BtnAllSemn
+            a 
+                font-family: $font-bold 
+                color: #000000 
+                text-transform: uppercase 
+                img 
+                    width: 0px 
+                    filter: invert(1) 
+                    transition: all 1s ease 
+                    display: inline-block 
+                
+
+.linkall 
+    position: absolute 
+    left: 0 
+    right: 0 
+    top: 0 
+    bottom: 0 
+    width: 100% 
+    height: 100%
+    z-index: 1                         
+.brand-social
+    a 
+        padding: 10px 10px 10px 0
+        font-size: 20px 
+        display: inline-block
+.brand-top
+    padding-top: 50px 
+    h3 
+        font-size: 28px !important 

@@ -1,0 +1,100 @@
+.Intro-Wppr,
+.Intro-Bg-Img,
+.Intro-Bg-Img span,
+.Intro-Bg-Img span img,
+.IntroTxt-Bx,
+.LogoImg span,
+.LogoImg span img,
+.ComnBtn-Wppr
+    width: 100%
+    display: block
+    position: relative
+
+.Intro-Wppr
+    height: 100vh
+    overflow: hidden
+    
+.Intro-Bg-Img,
+.Intro-Bg-Img span,
+.Intro-Bg-Img span img
+    height: 100%
+
+.IntroTxt-Wppr
+    transform: translate(-50%,-50%)
+    position: absolute
+    z-index: 1
+    width: 30%
+    left: 50%
+    top: 50% 
+    @include respond-to(screen-1140) 
+        width: 40% 
+    @include respond-to(screen-991) 
+        width: 50%    
+    @include respond-to(screen-767) 
+        width: 100%     
+    .IntroTxt-Bx
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        .LogoImg
+            display: inline-block
+            margin-bottom: 20px
+            position: relative
+        .title 
+            small,
+            h1
+                width: 100%
+                display: block
+                color: #ffffff
+                text-align: center
+                position: relative
+                font-family: $font-bold 
+                
+                   
+                   
+            h1 
+                font-size: 36px
+                line-height: 36px
+                font-style: italic
+                margin: 10px 0
+                @include respond-to(screen-767) 
+                   font-size: 24px 
+                   line-height: 26px 
+            small
+                font-size: 20px
+                @include respond-to(screen-767)
+                   font-size: 16px 
+            p 
+                font-family: $font-bold
+                text-align: center
+                line-height: 20px
+                color: #ffffff
+                font-size: 16px
+
+        .ComnBtn-Wppr
+            width: 70%
+            display: flex
+            margin: 30px 0            
+            align-items: center
+            justify-content: space-evenly 
+            @include respond-to(screen-767)
+                margin: 15px 0px 
+                width: 55% 
+            .ComnBtnTxt
+                color: #ffffff
+                padding: 6px 40px
+                font-family: $font-bold
+                border: 1px solid #ffffff 
+                @include respond-to(screen-767)
+                    padding: 5px 30px 
+                &:hover 
+                    background: #ffffff
+                    color: #000000
+                     
+                
+                
+
+
+
+    

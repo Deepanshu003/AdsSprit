@@ -1,0 +1,7 @@
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\bin\Debug\Component.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\bin\Debug\Component.pdb
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\bin\Debug\Utility.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\bin\Debug\Utility.pdb
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\obj\Debug\Component.csprojResolveAssemblyReference.cache
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\obj\Debug\Component.dll
+C:\Users\ibrandox\Documents\Visual Studio 2013\Projects\AdsSprit\Component\obj\Debug\Component.pdb

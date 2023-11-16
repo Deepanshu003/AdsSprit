@@ -1,0 +1,126 @@
+// media breakpiont
+
+$break-small : 420px
+$break-large : 1024px
+
+$screen-420 : 420px
+$screen-675 : 675px 
+$screen-767 : 767px
+$screen-860 : 860px
+$screen-991 : 991px
+$screen-1024 : 1024px
+$screen-1140 : 1140px
+$screen-1240 : 1240px
+$screen-1300 : 1300px
+
+@mixin respond-to($media)
+    @if $media == screen-420
+        @media only screen and (max-width: $screen-420) 
+            @content
+    @else if $media == screen-675
+        @media (max-width: $screen-675)
+            @content
+
+    @else if $media == screen-767
+        @media (max-width: $screen-767)
+            @content
+
+    @else if $media == phnLandscape
+        @media only screen  and (max-width: $screen-767) and  (orientation : landscape)
+            @content
+    @else if $media == screen-860
+        @media (max-width: $screen-860)
+            @content
+
+    @else if $media == screen-991
+        @media (max-width: $screen-991)
+            @content
+
+    @else if $media == screen-1024
+        @media (max-width: $screen-1024)
+            @content
+    @else if $media == screen-1140
+        @media (max-width: $screen-1140)
+            @content
+
+    @else if $media == screen-1240
+        @media (max-width: $screen-1240)
+            @content
+
+    @else if $media == screen-1300
+        @media (max-width: $screen-1300)
+            @content
+    
+    
+//color  
+$black : #000000
+$white : #ffffff 
+$Red : #e42914
+$lgtGry : #f6f6f7
+$FtrBg : #e44f3e
+
+//font
+$font : 'Poppins', sans-serif 
+$font-bold : 'EB Garamond', serif 
+  
+
+
+@mixin aftrBeforBX($width,$height,$top,$right,$bottom,$left)
+    width: $width
+    height: $height 
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+    position: absolute
+    content: ""
+ 
+@mixin keyframes($animation-name)
+    @-webkit-keyframes #{$animation-name}
+        @content
+    @-moz-keyframes #{$animation-name}
+        @content
+    @-ms-keyframes #{$animation-name}
+        @content
+    @keyframes #{$animation-name}
+        @content
+
+//alert or error input
+@mixin alert
+    .alert
+        animation: vibrate .4s cubic-bezier(0,0,.3,1) 1
+        background: #fff7f8
+        border: 1px solid #f9b6b6
+    +keyframes(vibrate)
+        10%,30%,50%,70%,90% 
+            transform: translate3d(-3px,0,0)
+            
+        20%,40%,60%,80%
+            transform: translate3d(3px,0,0)
+
+@mixin linear-gradient-three-color($first, $second, $third)     
+	background: -moz-linear-gradient(left, $first 0%, $second 50%, $third 100%)
+	background: -webkit-linear-gradient(left, $first 0%, $second 50%, $third 100%)
+	background: -o-linear-gradient(left, $first 0%, $second 50%, $third 100%)
+	background: linear-gradient(to right, $first 0%, $second 50%, $third 100%) 
+
+@mixin linear-gradient-two-color($from, $to)     
+	background: -moz-linear-gradient(left, $from 0%, $to 100%)
+	background: -webkit-linear-gradient(left, $from 0%, $to 100%)
+	background: -o-linear-gradient(left, $from 0%, $to 100%)
+	background: linear-gradient(to right, $from 0%, $to 100%) 
+
+@mixin gradient-topBottom($from, $to)     
+	background: -moz-linear-gradient(top, $from 0%, $to 100%)
+	background: -webkit-linear-gradient(top, $from 0%, $to 100%)
+	background: -o-linear-gradient(top, $from 0%, $to 100%)
+	background: linear-gradient(to bottom, $from 0%, $to 100%) 
+
+
+
+        
+
+
+
+
+

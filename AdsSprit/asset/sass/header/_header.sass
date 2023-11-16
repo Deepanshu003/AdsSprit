@@ -1,0 +1,281 @@
+header 
+    position: fixed
+    width: 100%
+    top: 0px
+    left: 0px
+    z-index: 9
+    @include respond-to(screen-767)
+        padding: 0
+    &:before 
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        right: auto;
+        bottom: auto;
+        left: 0px;
+        position: absolute;
+        content: "";
+        background-color: #ffffff;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        z-index: -1     
+    nav 
+        padding: 20px 80px 
+        transition: all 1s ease 
+        @include respond-to(screen-1140) 
+            padding: 20px 30px 
+        @include respond-to(screen-991) 
+            padding: 10px 15px   
+                
+        .cl12Nvsemnhdr 
+            display: flex 
+            justify-content: space-between 
+            align-items: center 
+            .cl6mnSwnLeft 
+                line-height: 0 
+                .logo 
+                    display: inline-block  
+                    transition: all 1s ease 
+                    line-height: 0 
+                    @include respond-to(screen-767) 
+                        width: 50px 
+                        img 
+                            width: 100% 
+                       
+                    img 
+                        transition: all 1s ease 
+
+            .cl6mnSwnright
+                @include respond-to(screen-767) 
+                    position: fixed;
+                    background: #fff;
+                    right: 0;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    height: 100vh 
+                    display: none
+                ul 
+                    @include respond-to(screen-767)
+                        padding: 0px 15px  
+                        padding-top: 40px 
+                    .DrpDwn 
+                        a 
+                            width: 90% 
+                            display: inline-block 
+                        &:hover 
+                            .MegaMenu
+                                opacity: 1 
+                                visibility: visible
+                                display: block   
+                                @include respond-to(screen-767) 
+                                   display: none
+                    li 
+                        display: inline-block
+                        @include respond-to(screen-767)
+                            display: block 
+                        @include respond-to(screen-991)
+                            &:nth-child(4) 
+                                display: none 
+                                @include respond-to(screen-767)
+                                display: block 
+                            &:nth-child(5) 
+                                display: none 
+                                @include respond-to(screen-767)
+                                display: block 
+                            &:nth-child(7)
+                                display: none 
+                                @include respond-to(screen-767)
+                                display: block 
+                            &:last-child 
+                                a 
+                                    margin-right: 0px  
+                        a 
+                            font-size: 14px 
+                            color: #ffffff 
+                            text-transform: uppercase 
+                            font-weight: 500 
+                            display: inline-block 
+                            padding: 10px 5px 
+                            margin-right: 40px  
+                            position: relative 
+                            transition: all 1s ease 
+                            @include respond-to(screen-1140) 
+                                margin-right: 15px 
+                            @include respond-to(screen-767)
+                                display: block 
+                                color: #000 
+                                padding: 8px 5px  
+
+                            &:hover
+                                &:before 
+                                    width: 100% 
+                            &:before 
+                                position: absolute 
+                                left: 0px 
+                                bottom: 0 
+                                content: '' 
+                                width: 0% 
+                                height: 2px;
+                                background-color: #ffffff  
+                                transition: all 1s ease 
+header.hdrDownnvr,                        
+header.hdrDown 
+    &:before
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+        left: 0px;
+        position: absolute;
+        content: "";
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    .nvrSwbnVr
+        @include respond-to(screen-767)
+            margin-top: -4px 
+        span 
+            background-color: #000;    
+    nav 
+        padding: 0px 60px 
+        @include respond-to(screen-991) 
+            padding: 0px 30px  
+        @include respond-to(screen-767) 
+            padding: 4px 8px     
+        .cl12Nvsemnhdr
+            .cl6mnSwnLeft 
+                @include respond-to(screen-767) 
+                   line-height: 0 
+                .logo 
+                    display: inline-block  
+                    width: 60px 
+                    @include respond-to(screen-767)
+                       width: 40px 
+                       line-height: 1 
+                    img 
+                        width: 100% 
+            .cl6mnSwnright
+                ul 
+                     
+                    li 
+                        a 
+                            color: #1c1b1b 
+                            padding: 24px 5px
+                            @include respond-to(screen-767) 
+                                padding: 10px 5px  
+                            &:before 
+                                background-color: #1c1b1b 
+        
+
+header.hdrinnerpge
+    nav
+        .cl12Nvsemnhdr
+            .cl6mnSwnright
+                ul 
+                    li 
+                        a 
+                            color: #000 
+    .nvrSwbnVr
+        span 
+            background-color: #000                         
+
+
+.title 
+    width: 100%
+    position: relative
+    display: inline-block
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 
+    font-size: 66px
+    line-height: 51px
+    color: #000
+
+.title p 
+    font-size: 14px
+    line-height: 28px
+    text-align: left
+
+.CmnPage
+    width: 100%
+    position: relative 
+    display: inline-block 
+    img 
+        width: 100% 
+
+
+.clsbtnVr
+    display: none 
+    @include respond-to(screen-767) 
+       display: inline-block 
+       position: absolute;
+       right: 8px;
+       top: 8px;
+       line-height: 0;
+       cursor: pointer;
+       width: 15px; 
+       img 
+           width: 100% 
+           filter: invert(1) 
+
+
+.nvrSwbnVr
+    display: none     
+    @include respond-to(screen-767)
+        display: inline-block 
+        width: 26px 
+        line-height: 0.1 
+        margin-top: -8px 
+        span 
+            display: inline-block 
+            width: 100% 
+            height: 1px 
+            background-color: #fff 
+
+header.hdrinnerpge
+    @include respond-to(screen-767)
+        border-bottom: 1px solid #eee 
+        nav 
+            padding: 8px 15px 
+            .cl6mnSwnLeft
+                line-height: 0 
+                a 
+                    line-height: 0 
+            .nvrSwbnVr
+                margin-top: -5px                           
+
+.OnlyMobile.DSNavBG
+    display: none
+    @include respond-to(screen-767)
+        display: block
+        position: absolute
+        bottom: 10%
+        left: 0
+        right: 0
+        padding: 0 15px
+        transform: translateY(100%)
+        transition: transform 700ms ease
+        pointer-events: none
+        .cl12SemnvrtNavImg
+            display: flex
+            flex-wrap: nowrap
+            align-items: flex-end
+            justify-content: space-between
+            .cl10navSemnvr
+                img
+                    max-width: 100%
+
+@include respond-to(screen-767)
+    .menu-actice
+        .OnlyMobile.DSNavBG
+            transform: translateY(00%)
+            transition-delay: 400ms

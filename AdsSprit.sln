@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdsSprit", "AdsSprit\AdsSprit.csproj", "{2028509A-1C93-49A9-A1EB-E78AB322A228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component", "Component\Component.csproj", "{4A1CEF5C-27C5-4966-A544-E189B3CC4FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{9C20A5C3-86F2-44DC-BFCF-0660E767825A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2028509A-1C93-49A9-A1EB-E78AB322A228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2028509A-1C93-49A9-A1EB-E78AB322A228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2028509A-1C93-49A9-A1EB-E78AB322A228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2028509A-1C93-49A9-A1EB-E78AB322A228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1CEF5C-27C5-4966-A544-E189B3CC4FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1CEF5C-27C5-4966-A544-E189B3CC4FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1CEF5C-27C5-4966-A544-E189B3CC4FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1CEF5C-27C5-4966-A544-E189B3CC4FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C20A5C3-86F2-44DC-BFCF-0660E767825A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C20A5C3-86F2-44DC-BFCF-0660E767825A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C20A5C3-86F2-44DC-BFCF-0660E767825A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C20A5C3-86F2-44DC-BFCF-0660E767825A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

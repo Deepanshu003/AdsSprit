@@ -1,0 +1,1905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2028509A-1C93-49A9-A1EB-E78AB322A228}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdsSprit</RootNamespace>
+    <AssemblyName>AdsSprit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdsSpritAdmin\AddUpdAwards.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdBanner.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdCategory.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdCockTails.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdJob.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdLeadershipData.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdProductData.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdProductDetail.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdSize.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdSpiritsSource.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdSubCategory.aspx" />
+    <Content Include="AdsSpritAdmin\AddUpdValues.aspx" />
+    <Content Include="AdsSpritAdmin\Coktails.aspx" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_about\sponsors\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\aspx\config.ascx.bak" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf5_connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf5_upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_basexml.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_commands.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_io.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\cf_util.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\config.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\image.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\ImageObject.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\cfm\upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\lasso\config.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\lasso\connector.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\lasso\upload.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\basexml.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\commands.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\config.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\connector.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\io.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\upload.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\upload_fck.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\perl\util.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\basexml.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\commands.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\config.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\connector.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\io.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\phpcompat.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\upload.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\php\util.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\config.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\connector.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\fckcommands.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\fckconnector.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\fckoutput.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\fckutil.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\upload.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\wsgi.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\zope.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\userfiles\image\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_about\sponsors\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\aspx\config.ascx.bak" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf5_connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf5_upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_basexml.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_commands.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_io.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\cf_util.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\config.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\connector.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\image.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\ImageObject.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\cfm\upload.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\lasso\config.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\lasso\connector.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\lasso\upload.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\basexml.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\commands.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\config.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\connector.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\io.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\upload.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\upload_fck.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\perl\util.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\basexml.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\commands.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\config.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\connector.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\io.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\phpcompat.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\upload.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\php\util.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\config.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\connector.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\fckcommands.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\fckconnector.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\fckoutput.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\fckutil.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\upload.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\wsgi.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\zope.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\userfiles\image\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.cfc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.pl" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor_php4.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor_php5.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckutils.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor_php4.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor_php5.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckutils.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\package.bat" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\run.bat" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\sample01_cert.pfx" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\fck.afpa" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\fck.afpa.code" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\sample01.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\sample02.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\sample03.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\sample04.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\afp\sampleposteddata.afp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample01.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample01_mx.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample02.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample02_mx.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample03.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample03_mx.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample04.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sample04_mx.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\cfm\sampleposteddata.cfm" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample16.fla" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\lasso\sample01.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\lasso\sample02.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\lasso\sample03.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\lasso\sample04.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\lasso\sampleposteddata.lasso" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\perl\sample01.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\perl\sample02.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\perl\sample03.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\perl\sample04.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\perl\sampleposteddata.cgi" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\php\sample01.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\php\sample02.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\php\sample03.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\php\sample04.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\php\sampleposteddata.php" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\py\sample01.py" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\py\sampleposteddata.py" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontba72%281%29.eot" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.eot" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.otf" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.ttf" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.woff" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.woff2" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.eot" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.otf" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.ttf" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.woff" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.woff2" />
+    <Content Include="AdsSpritAdmin\Home.aspx" />
+    <Content Include="AdsSpritAdmin\LeadrCategory.aspx" />
+    <Content Include="AdsSpritAdmin\ManageAwards.aspx" />
+    <Content Include="AdsSpritAdmin\ManageBanner.aspx" />
+    <Content Include="AdsSpritAdmin\ManageCockTails.aspx" />
+    <Content Include="AdsSpritAdmin\ManageContact.aspx" />
+    <Content Include="AdsSpritAdmin\ManageJob.aspx" />
+    <Content Include="AdsSpritAdmin\ManageJobEnquiry.aspx" />
+    <Content Include="AdsSpritAdmin\Manageleader.aspx" />
+    <Content Include="AdsSpritAdmin\ManageLeaderData.aspx" />
+    <Content Include="AdsSpritAdmin\ManageProductCategory.aspx" />
+    <Content Include="AdsSpritAdmin\ManageProductData.aspx" />
+    <Content Include="AdsSpritAdmin\ManageSize.aspx" />
+    <Content Include="AdsSpritAdmin\ManageSpiritSource.aspx" />
+    <Content Include="AdsSpritAdmin\ManageSubCategory.aspx" />
+    <Content Include="AdsSpritHtml\career.html" />
+    <Content Include="AdsSpritHtml\contactus.html" />
+    <Content Include="AdsSpritHtml\csr.html" />
+    <Content Include="AdsSpritHtml\index.html" />
+    <Content Include="AdsSpritHtml\Infrastructure.html" />
+    <Content Include="AdsSpritHtml\international-business.html" />
+    <Content Include="AdsSpritHtml\intro.html" />
+    <Content Include="AdsSpritHtml\media-details.html" />
+    <Content Include="AdsSpritHtml\media.html" />
+    <Content Include="AdsSpritHtml\our-story.html" />
+    <Content Include="AdsSpritHtml\product-details.html" />
+    <Content Include="AdsSpritHtml\product.html" />
+    <Content Include="AdsSpritHtml\Thankyou-page.html" />
+    <Content Include="AdsSpritHtml\values.html" />
+    <Content Include="asset\css\fontawesome-all.css" />
+    <Content Include="asset\css\fontawesome-all.min.css" />
+    <Content Include="asset\css\mousehrmn.css" />
+    <Content Include="asset\css\owl.carousel.min.css" />
+    <Content Include="asset\css\owl.theme.default.min.css" />
+    <Content Include="asset\css\scroll_bar.css" />
+    <Content Include="asset\css\style.css" />
+    <Content Include="asset\font\fa-brands-400.svg" />
+    <Content Include="asset\font\fa-regular-400.svg" />
+    <Content Include="asset\font\fa-solid-900.svg" />
+    <Content Include="asset\font\webfont\CenturyGothic-Bold.svg" />
+    <Content Include="asset\font\webfont\CenturyGothic.svg" />
+    <Content Include="asset\font\webfont\preview.html" />
+    <Content Include="asset\font\webfont\styles.css" />
+    <Content Include="asset\icon\attachment.png" />
+    <Content Include="asset\icon\call.png" />
+    <Content Include="asset\icon\close.png" />
+    <Content Include="asset\icon\down-arrow-select1.png" />
+    <Content Include="asset\icon\dwnarw.png" />
+    <Content Include="asset\icon\excellence.png" />
+    <Content Include="asset\icon\facebook-logo.png" />
+    <Content Include="asset\icon\growth.png" />
+    <Content Include="asset\icon\icnlnvr.png" />
+    <Content Include="asset\icon\linkedin-logo.png" />
+    <Content Include="asset\icon\location.png" />
+    <Content Include="asset\icon\magnifying-glass.svg" />
+    <Content Include="asset\icon\network.png" />
+    <Content Include="asset\icon\ox.png" />
+    <Content Include="asset\icon\phonecall.gif" />
+    <Content Include="asset\icon\quote.png" />
+    <Content Include="asset\icon\teamwork.png" />
+    <Content Include="asset\icon\twitter.png" />
+    <Content Include="asset\images\about\Ceo.jpg" />
+    <Content Include="asset\images\about\JrnyBg.jpg" />
+    <Content Include="asset\images\about\JrnySldr-Img-1.jpg" />
+    <Content Include="asset\images\about\JrnySldr-Img-2.jpg" />
+    <Content Include="asset\images\about\JrnySldr-Img-3.jpg" />
+    <Content Include="asset\images\about\Prdct-Dtl-Logo1.jpg" />
+    <Content Include="asset\images\about\quote.png" />
+    <Content Include="asset\images\about\team-1.jpg" />
+    <Content Include="asset\images\about\team-3.jpg" />
+    <Content Include="asset\images\about\team.jpg" />
+    <Content Include="asset\images\about\vission.jpg" />
+    <Content Include="asset\images\awrds.png" />
+    <Content Include="asset\images\backgncntus.jpg" />
+    <Content Include="asset\images\bacmnswndlpge.png" />
+    <Content Include="asset\images\bacmnswndlpge1.png" />
+    <Content Include="asset\images\banner-1.jpg" />
+    <Content Include="asset\images\banner-2.jpg" />
+    <Content Include="asset\images\banner-3.jpg" />
+    <Content Include="asset\images\banner-4.jpg" />
+    <Content Include="asset\images\bckvectimg.png" />
+    <Content Include="asset\images\blogbnnerimg.jpg" />
+    <Content Include="asset\images\blog\blog1.jpg" />
+    <Content Include="asset\images\blog\blog2.jpg" />
+    <Content Include="asset\images\blog\blog3.jpg" />
+    <Content Include="asset\images\blog\blog4.jpg" />
+    <Content Include="asset\images\blog\blogdlbanner.jpg" />
+    <Content Include="asset\images\bnnerbacimg.jpg" />
+    <Content Include="asset\images\bnrshwn.jpg" />
+    <Content Include="asset\images\bottle\bottleimg1.png" />
+    <Content Include="asset\images\bottle\bottleimg2.png" />
+    <Content Include="asset\images\bottle\bottleimg3.png" />
+    <Content Include="asset\images\bottle\bottleimg4.png" />
+    <Content Include="asset\images\bottle\bottleimg5.png" />
+    <Content Include="asset\images\bottle\bottleimg6.png" />
+    <Content Include="asset\images\bottle\bottleimg7.png" />
+    <Content Include="asset\images\bottle\calender-brandy.png" />
+    <Content Include="asset\images\bottle\calender-rum.png" />
+    <Content Include="asset\images\bottle\prodlimg.png" />
+    <Content Include="asset\images\bottle\prodlimg1.png" />
+    <Content Include="asset\images\bottle\prodlimg2.png" />
+    <Content Include="asset\images\bottle\prodlimg3.png" />
+    <Content Include="asset\images\bottle\prodlimg4.png" />
+    <Content Include="asset\images\Calenter-category.jpg" />
+    <Content Include="asset\images\carerbanner.jpg" />
+    <Content Include="asset\images\carpgebnner.jpg" />
+    <Content Include="asset\images\catimg1.jpg" />
+    <Content Include="asset\images\catimg2.jpg" />
+    <Content Include="asset\images\catimg3.jpg" />
+    <Content Include="asset\images\catimg4.jpg" />
+    <Content Include="asset\images\cntactbanner.jpg" />
+    <Content Include="asset\images\CSR\banner.jpg" />
+    <Content Include="asset\images\CSR\csr-clm-img-1.jpg" />
+    <Content Include="asset\images\CSR\csr-clm-img-2.jpg" />
+    <Content Include="asset\images\CSR\csr-clm-img-3.jpg" />
+    <Content Include="asset\images\CSR\csr-clm-img-4.jpg" />
+    <Content Include="asset\images\CSR\Environment-Bg.jpg" />
+    <Content Include="asset\images\CSR\rspnsv-drnk.jpg" />
+    <Content Include="asset\images\directrs.jpg" />
+    <Content Include="asset\images\Double-blue-category.jpg" />
+    <Content Include="asset\images\favicon.ico" />
+    <Content Include="asset\images\Generation-category.jpg" />
+    <Content Include="asset\images\infra\bacimgbear.png" />
+    <Content Include="asset\images\infra\bacimgswnvr.jpg" />
+    <Content Include="asset\images\infra\bannerinternational.jpg" />
+    <Content Include="asset\images\infra\close.png" />
+    <Content Include="asset\images\infra\icon1.png" />
+    <Content Include="asset\images\infra\icon2.png" />
+    <Content Include="asset\images\infra\icon3.png" />
+    <Content Include="asset\images\infra\icon4.png" />
+    <Content Include="asset\images\infra\icon5.png" />
+    <Content Include="asset\images\infra\icon6.png" />
+    <Content Include="asset\images\infra\Infrastructure-banner.jpg" />
+    <Content Include="asset\images\infra\infratopbnner.png" />
+    <Content Include="asset\images\infra\mapmnswn.png" />
+    <Content Include="asset\images\infra\mapointer.png" />
+    <Content Include="asset\images\infra\mpicn.png" />
+    <Content Include="asset\images\infra\plyiocn.png" />
+    <Content Include="asset\images\infra\Qc-image.jpg" />
+    <Content Include="asset\images\infra\videbanner.jpg" />
+    <Content Include="asset\images\intro\intro_bg.jpg" />
+    <Content Include="asset\images\intro\intro_bg1.jpg" />
+    <Content Include="asset\images\logo.png" />
+    <Content Include="asset\images\Prdct-Dtl-Logo.jpg" />
+    <Content Include="asset\images\prdct-dtl\Ryl-Sldr-1-min.jpg" />
+    <Content Include="asset\images\prdct-dtl\Ryl-Sldr-1.jpg" />
+    <Content Include="asset\images\prdct-dtl\Ryl-Sldr-11.jpg" />
+    <Content Include="asset\images\Royal-green-category.jpg" />
+    <Content Include="asset\images\texture.jpg" />
+    <Content Include="asset\images\values\excellence.png" />
+    <Content Include="asset\images\values\innovation.png" />
+    <Content Include="asset\images\values\integration.png" />
+    <Content Include="asset\images\values\respect.png" />
+    <Content Include="asset\images\values\team-work.png" />
+    <Content Include="asset\images\values\value-header.png" />
+    <Content Include="asset\images\values\value2.png" />
+    <Content Include="asset\images\wskybanner.jpg" />
+    <Content Include="asset\js\app.js" />
+    <Content Include="asset\js\common.js" />
+    <Content Include="asset\js\fontawesome-all.min.js" />
+    <Content Include="asset\js\map.js" />
+    <Content Include="asset\js\owl.carousel.js" />
+    <Content Include="asset\js\owl.carousel.min.js" />
+    <Content Include="asset\js\perfect-scrollbar.js" />
+    <Content Include="asset\sass\project\_project-detail.css" />
+    <Content Include="asset\sass\style.css" />
+    <Content Include="Brands.aspx" />
+    <Content Include="Carrer.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="csr.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="AdsSpritAdmin\HelloWorld\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\icons\Thumbs.db" />
+    <Content Include="AdsSpritAdmin\images\AdsBanner.jpg" />
+    <Content Include="AdsSpritAdmin\images\adslogo.png" />
+    <Content Include="AdsSpritAdmin\images\Thumbs.db" />
+    <Content Include=".vs\html\FileContentIndex\1dae91dd-8efb-46e7-906f-a4be457c484e.vsidx" />
+    <Content Include=".vs\html\FileContentIndex\read.lock" />
+    <Content Include=".vs\html\v17\.wsuo" />
+    <Content Include=".vs\slnx.sqlite" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="asset\font\fa-brands-400.eot" />
+    <Content Include="asset\font\fa-brands-400.ttf" />
+    <Content Include="asset\font\fa-brands-400.woff" />
+    <Content Include="asset\font\fa-brands-400.woff2" />
+    <Content Include="asset\font\fa-regular-400.eot" />
+    <Content Include="asset\font\fa-regular-400.ttf" />
+    <Content Include="asset\font\fa-regular-400.woff" />
+    <Content Include="asset\font\fa-regular-400.woff2" />
+    <Content Include="asset\font\fa-solid-900.eot" />
+    <Content Include="asset\font\fa-solid-900.ttf" />
+    <Content Include="asset\font\fa-solid-900.woff" />
+    <Content Include="asset\font\fa-solid-900.woff2" />
+    <Content Include="asset\font\webfont\CenturyGothic-Bold.eot" />
+    <Content Include="asset\font\webfont\CenturyGothic-Bold.ttf" />
+    <Content Include="asset\font\webfont\CenturyGothic-Bold.woff" />
+    <Content Include="asset\font\webfont\CenturyGothic-Bold.zip" />
+    <Content Include="asset\font\webfont\CenturyGothic-BoldItalic.zip" />
+    <Content Include="asset\font\webfont\CenturyGothic-Italic.zip" />
+    <Content Include="asset\font\webfont\CenturyGothic.eot" />
+    <Content Include="asset\font\webfont\CenturyGothic.ttf" />
+    <Content Include="asset\font\webfont\CenturyGothic.woff" />
+    <Content Include="asset\font\webfont\CenturyGothic.zip" />
+    <Content Include="asset\font\webfont\GOTHICBI_1.TTF" />
+    <Content Include="asset\font\webfont\GOTHICB_1.TTF" />
+    <Content Include="asset\font\webfont\GOTHICI_1.TTF" />
+    <Content Include="asset\font\webfont\GOTHIC_1.TTF" />
+    <Content Include="asset\sass\about\_about.sass" />
+    <Content Include="asset\sass\blog\_blog-detail.sass" />
+    <Content Include="asset\sass\blog\_blog.sass" />
+    <Content Include="asset\sass\career\_career.sass" />
+    <Content Include="asset\sass\career\_crs.sass" />
+    <Content Include="asset\sass\contact\_contact.sass" />
+    <Content Include="asset\sass\faq\_faq.sass" />
+    <Content Include="asset\sass\footer\_footer.sass" />
+    <Content Include="asset\sass\header\_header.sass" />
+    <Content Include="asset\sass\header\_nav.sass" />
+    <Content Include="asset\sass\index\_index.sass" />
+    <Content Include="asset\sass\Infrastructure\_Infrastructure.sass" />
+    <Content Include="asset\sass\intro\_intro.sass" />
+    <Content Include="asset\sass\project\_project-detail.sass" />
+    <Content Include="asset\sass\project\_project.sass" />
+    <Content Include="asset\sass\style.css.map" />
+    <Content Include="asset\sass\style.sass" />
+    <Content Include="asset\sass\_common.sass" />
+    <Content Include="asset\sass\_reset.sass" />
+    <Content Include="asset\sass\_var.sass" />
+    <Content Include="AdsSpirit.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdsSpritAdmin\ChangePassword.aspx" />
+    <Content Include="AdsSpritAdmin\css\bootstrap.css" />
+    <Content Include="AdsSpritAdmin\css\custom-styles.css" />
+    <Content Include="AdsSpritAdmin\css\font-awesome.css" />
+    <Content Include="AdsSpritAdmin\css\jquery-ui.css" />
+    <Content Include="AdsSpritAdmin\css\morris-0.4.3.min.css" />
+    <Content Include="AdsSpritAdmin\css\timepicki.css" />
+    <Content Include="AdsSpritAdmin\Datetime\jquery-1.7.2.min.js" />
+    <Content Include="AdsSpritAdmin\Datetime\jquery-ui-1.8.19.custom.css" />
+    <Content Include="AdsSpritAdmin\Datetime\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\fck_editorarea.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\fck_internal.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_address.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_blockquote.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_div.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h1.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h2.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h3.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h4.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h5.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_h6.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_p.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\block_pre.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\fck_anchor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\css\images\fck_plugin.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\common\images\locked.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\common\images\reset.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_about.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_about\sponsors\spellchecker_net.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_anchor.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_button.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_checkbox.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_colorselector.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_div.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_docprops.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_flash.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_form.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_image.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_link.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_listprop.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_paste.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_radiobutton.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_replace.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_select.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_smiley.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_source.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_specialchar.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_table.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_tablecell.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_template.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_textarea.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dialog\fck_textfield.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dtd\fck_dtd_test.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\fckdebug.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\fckdialog.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\fckeditor.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\fckeditor.original.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\browser.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\browser.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\aspx\config.ascx" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\aspx\connector.aspx" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\aspx\upload.aspx" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\basexml.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\class_upload.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\commands.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\config.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\connector.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\io.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\upload.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\asp\util.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\py\htaccess.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\test.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\uploadtest.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\userfiles\image\14.jpg" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\filemanager\connectors\userfiles\image\Page20.jpg" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\anchor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\arrow_ltr.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\arrow_rtl.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\cake.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\heart.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\images\spacer.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\js\fckadobeair.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\js\fckeditorcode_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\af.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ar.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\bg.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\bn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\bs.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\cs.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\da.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\de.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\el.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\en-au.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\en-ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\en-uk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\en.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\eo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\es.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\et.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\eu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\fa.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\fi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\fo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\fr-ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\fr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\gl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\gu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\he.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\hi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\hr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\hu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\is.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\it.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ja.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\km.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\lt.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\lv.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\mn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ms.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\nb.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\nl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\no.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\pl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\pt-br.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\pt.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ro.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\ru.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\sk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\sl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\sr-latn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\sr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\sv.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\th.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\tr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\uk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\vi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\zh-cn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\zh.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\lang\_translationstatus.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\bbcode\_sample\sample.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\bbcode\_sample\sample.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\es.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\fck_dialog.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\fck_dialog_ie6.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\fck_editor.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\fck_strip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\dialog.sides.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\dialog.sides.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\dialog.sides.rtl.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\sprites.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\sprites.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\fck_dialog.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\fck_dialog_ie6.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\fck_editor.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\fck_strip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\dialog.sides.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\dialog.sides.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\dialog.sides.rtl.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\sprites.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\sprites.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.arrowright.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.bg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.buttonarrow.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.collapse.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.end.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.expand.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.separator.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\office2003\images\toolbar.start.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\fck_dialog.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\fck_dialog_ie6.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\fck_editor.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\fck_strip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\dialog.sides.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\dialog.sides.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\dialog.sides.rtl.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\sprites.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\sprites.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.arrowright.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.buttonarrow.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.buttonbg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.collapse.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.end.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.expand.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.separator.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\silver\images\toolbar.start.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\skins\_fckviewstrips.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\wsc\ciframe.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\wsc\tmpFrameset.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\wsc\w.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckcontextmenu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdataprocessor.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdocumentfragment_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdocumentfragment_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdomrange.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdomrangeiterator.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdomrange_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckdomrange_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckeditingarea.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckelementpath.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckenterkey.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckevents.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckhtmliterator.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckicon.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckiecleanup.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckimagepreloader.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckkeystrokehandler.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckmenublock.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckmenublockpanel.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckmenuitem.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckpanel.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckspecialcombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckstyle.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbar.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarbreak_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarbreak_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarbutton.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarbuttonui.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarfontformatcombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarfontscombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarfontsizecombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarpanelbutton.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarspecialcombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fcktoolbarstylecombo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckw3crange.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckxml.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckxml_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\classes\fckxml_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckblockquotecommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckcorestylecommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckfitwindow.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckindentcommands.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckjustifycommands.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fcklistcommands.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fcknamedcommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckpasteplaintextcommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckpastewordcommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckremoveformatcommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckshowblocks.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckspellcheckcommand_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckspellcheckcommand_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fckstylecommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fcktablecommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fcktextcolorcommand.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\commandclasses\fck_othercommands.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\fckconstants.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\fckeditorapi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\fckjscoreextensions.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\fckscriptloader.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fck.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckbrowserinfo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckcodeformatter.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckcommands.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckconfig.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckdebug.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckdebug_empty.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckdialog.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckdocumentprocessor.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckdomtools.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcklanguagemanager.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcklisthandler.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcklistslib.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckplugins.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckregexlib.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckselection.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckselection_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckselection_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckstyles.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktablehandler.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktablehandler_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktablehandler_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktoolbaritems.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktoolbarset.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktools.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktools_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fcktools_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckundo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckurlparams.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckxhtml.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckxhtmlentities.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckxhtml_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fckxhtml_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fck_contextmenu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fck_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\editor\_source\internals\fck_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckconfig.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\fck_editorarea.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\fck_internal.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_address.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_blockquote.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_div.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h1.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h2.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h3.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h4.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h5.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_h6.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_p.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\block_pre.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\fck_anchor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\css\images\fck_plugin.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\common\images\locked.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\common\images\reset.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_about.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_about\sponsors\spellchecker_net.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_anchor.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_button.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_checkbox.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_colorselector.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_div.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_docprops.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_flash.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_form.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_image.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_link.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_listprop.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_paste.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_radiobutton.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_replace.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_select.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_smiley.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_source.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_specialchar.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_table.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_tablecell.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_template.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_textarea.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dialog\fck_textfield.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dtd\fck_dtd_test.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\fckdebug.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\fckdialog.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\fckeditor.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\fckeditor.original.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\browser.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\browser.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\aspx\config.ascx" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\aspx\connector.aspx" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\aspx\upload.aspx" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\basexml.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\class_upload.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\commands.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\config.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\connector.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\io.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\upload.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\asp\util.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\py\htaccess.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\test.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\uploadtest.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\userfiles\image\14.jpg" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\filemanager\connectors\userfiles\image\Page20.jpg" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\anchor.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\arrow_ltr.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\arrow_rtl.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\cake.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\heart.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\images\spacer.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\js\fckadobeair.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\js\fckeditorcode_ie.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\af.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ar.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\bg.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\bn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\bs.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\cs.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\da.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\de.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\el.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\en-au.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\en-ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\en-uk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\en.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\eo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\es.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\et.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\eu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\fa.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\fi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\fo.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\fr-ca.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\fr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\gl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\gu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\he.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\hi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\hr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\hu.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\is.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\it.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ja.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\km.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ko.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\lt.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\lv.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\mn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ms.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\nb.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\nl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\no.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\pl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\pt-br.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\pt.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ro.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\ru.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\sk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\sl.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\sr-latn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\sr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\sv.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\th.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\tr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\uk.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\vi.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\zh-cn.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\zh.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\lang\_translationstatus.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\bbcode\_sample\sample.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\bbcode\_sample\sample.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckconfig.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckeditor.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckpackager.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fckstyles.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\fcktemplates.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\license.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\_documentation.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\_upgrade.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\_whatsnew.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckeditor\_whatsnew_history.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckpackager.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\fckstyles.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\fcktemplates.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\license.txt" />
+    <Content Include="AdsSpritAdmin\fckeditor\_documentation.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\application.xml" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\icons\128.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\icons\16.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\icons\32.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\icons\48.png" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\adobeair\sample01.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\asp\sample01.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\asp\sample02.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\asp\sample03.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\asp\sample04.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\asp\sampleposteddata.asp" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\default.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample06.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample11_frame.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample14.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample14.styles.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample15.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample16.config.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\sample16.swf" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\assets\swfobject.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample01.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample02.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample03.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample04.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample05.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample06.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample07.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample08.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample09.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample10.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample11.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample12.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample13.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample14.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample15.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\html\sample16.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\sample.css" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\sampleslist.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\find.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\find.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\lang\en.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\lang\fr.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\lang\it.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\replace.gif" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\findreplace\replace.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_samples\_plugins\samples\fckplugin.js" />
+    <Content Include="AdsSpritAdmin\fckeditor\_upgrade.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_whatsnew.html" />
+    <Content Include="AdsSpritAdmin\fckeditor\_whatsnew_history.html" />
+    <Content Include="AdsSpritAdmin\fonts\font-awesome.css" />
+    <Content Include="AdsSpritAdmin\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="AdsSpritAdmin\font\P22JohnstonUnderground.svg" />
+    <Content Include="AdsSpritAdmin\font\ufontscomfutura-bk-bt-book.svg" />
+    <Content Include="AdsSpritAdmin\Footer.ascx" />
+    <Content Include="AdsSpritAdmin\Header.ascx" />
+    <Content Include="AdsSpritAdmin\HeaderRight.ascx" />
+    <Content Include="AdsSpritAdmin\HelloWorld\agenda.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\calbtn.gif" />
+    <Content Include="AdsSpritAdmin\HelloWorld\ipopeng.htm" />
+    <Content Include="AdsSpritAdmin\HelloWorld\jquery-1.10.2.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\jquery-ui.css" />
+    <Content Include="AdsSpritAdmin\HelloWorld\js\jquery-1.10.2.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\js\jquery-ui.css" />
+    <Content Include="AdsSpritAdmin\HelloWorld\js\jquery-ui.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\normal.css" />
+    <Content Include="AdsSpritAdmin\HelloWorld\normal.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\plugins.js" />
+    <Content Include="AdsSpritAdmin\HelloWorld\_hcc_thumbs\calbtn.gif-thumb-80.gif" />
+    <Content Include="AdsSpritAdmin\icons\backcolor.gif" />
+    <Content Include="AdsSpritAdmin\icons\backcolor_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\background_silver.jpg" />
+    <Content Include="AdsSpritAdmin\icons\bold.gif" />
+    <Content Include="AdsSpritAdmin\icons\bold_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\copy.gif" />
+    <Content Include="AdsSpritAdmin\icons\copy_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\cut.gif" />
+    <Content Include="AdsSpritAdmin\icons\cut_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\forecolor.gif" />
+    <Content Include="AdsSpritAdmin\icons\forecolor_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\help.gif" />
+    <Content Include="AdsSpritAdmin\icons\help_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\indent_left.gif" />
+    <Content Include="AdsSpritAdmin\icons\indent_left_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\indent_right.gif" />
+    <Content Include="AdsSpritAdmin\icons\indent_right_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_hyperlink.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_hyperlink_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_picture.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_picture_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_table.gif" />
+    <Content Include="AdsSpritAdmin\icons\insert_table_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\italics.gif" />
+    <Content Include="AdsSpritAdmin\icons\italics_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_center.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_center_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_left.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_left_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_right.gif" />
+    <Content Include="AdsSpritAdmin\icons\justify_right_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\list_ordered.gif" />
+    <Content Include="AdsSpritAdmin\icons\list_ordered_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\list_unordered.gif" />
+    <Content Include="AdsSpritAdmin\icons\list_unordered_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\logo.gif" />
+    <Content Include="AdsSpritAdmin\icons\paste.gif" />
+    <Content Include="AdsSpritAdmin\icons\paste_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\redo.gif" />
+    <Content Include="AdsSpritAdmin\icons\redo_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\select_font.gif" />
+    <Content Include="AdsSpritAdmin\icons\select_font_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\select_size.gif" />
+    <Content Include="AdsSpritAdmin\icons\select_size_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\seperator.gif" />
+    <Content Include="AdsSpritAdmin\icons\seperator2.gif" />
+    <Content Include="AdsSpritAdmin\icons\strikethrough.gif" />
+    <Content Include="AdsSpritAdmin\icons\strikethrough_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\subscript.gif" />
+    <Content Include="AdsSpritAdmin\icons\subscript_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\superscript.gif" />
+    <Content Include="AdsSpritAdmin\icons\superscript_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\underline.gif" />
+    <Content Include="AdsSpritAdmin\icons\underline_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\undo.gif" />
+    <Content Include="AdsSpritAdmin\icons\undo_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\view_source.gif" />
+    <Content Include="AdsSpritAdmin\icons\view_source_on.gif" />
+    <Content Include="AdsSpritAdmin\icons\view_text.gif" />
+    <Content Include="AdsSpritAdmin\icons\view_text_on.gif" />
+    <Content Include="AdsSpritAdmin\images\01.png" />
+    <Content Include="AdsSpritAdmin\images\02.png" />
+    <Content Include="AdsSpritAdmin\images\03.png" />
+    <Content Include="AdsSpritAdmin\images\04.png" />
+    <Content Include="AdsSpritAdmin\images\05.png" />
+    <Content Include="AdsSpritAdmin\images\06.png" />
+    <Content Include="AdsSpritAdmin\images\5.jpg" />
+    <Content Include="AdsSpritAdmin\images\apnoghar.png" />
+    <Content Include="AdsSpritAdmin\images\barcode.png" />
+    <Content Include="AdsSpritAdmin\images\bg.jpg" />
+    <Content Include="AdsSpritAdmin\images\bg.png" />
+    <Content Include="AdsSpritAdmin\images\calbtn.gif" />
+    <Content Include="AdsSpritAdmin\images\calender.png" />
+    <Content Include="AdsSpritAdmin\images\call-answer.png" />
+    <Content Include="AdsSpritAdmin\images\delete.jpg" />
+    <Content Include="AdsSpritAdmin\images\download.jpg" />
+    <Content Include="AdsSpritAdmin\images\edit.jpg" />
+    <Content Include="AdsSpritAdmin\images\envelope.png" />
+    <Content Include="AdsSpritAdmin\images\favicon.png" />
+    <Content Include="AdsSpritAdmin\images\Field.jpg" />
+    <Content Include="AdsSpritAdmin\images\loading.gif" />
+    <Content Include="AdsSpritAdmin\images\login-sprite.png" />
+    <Content Include="AdsSpritAdmin\images\logo.png" />
+    <Content Include="AdsSpritAdmin\images\logout.png" />
+    <Content Include="AdsSpritAdmin\images\ox.png" />
+    <Content Include="AdsSpritAdmin\images\prnt.png" />
+    <Content Include="AdsSpritAdmin\images\question.png" />
+    <Content Include="AdsSpritAdmin\images\settings.png" />
+    <Content Include="AdsSpritAdmin\images\stockS.png" />
+    <Content Include="AdsSpritAdmin\images\ttlusers.png" />
+    <Content Include="AdsSpritAdmin\images\user.png" />
+    <Content Include="AdsSpritAdmin\images\view.gif" />
+    <Content Include="AdsSpritAdmin\images\watermark.png" />
+    <Content Include="AdsSpritAdmin\index.aspx" />
+    <Content Include="AdsSpritAdmin\Javascript\asdropdowntreeview\dropdowntreeview.css" />
+    <Content Include="AdsSpritAdmin\Javascript\asdropdowntreeview\images\windropdown-disabled.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\asdropdowntreeview\images\windropdown.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\astreeview.css" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\astreeview_packed.js" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-bottom-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-checkbox-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-checkbox-half-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-checkbox-unchecked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-dragDrop-indicator1.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-dragDrop-indicator2.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-folder-open.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-folder.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-li-bg.jpg" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-middle-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-minus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-node.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-plus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-root-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-top-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\images\astreeview-vertical-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\default.css" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-bottom-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-checkbox-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-checkbox-half-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-checkbox-unchecked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-dragDrop-indicator1.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-dragDrop-indicator2.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-folder-open.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-folder.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-middle-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-minus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-node.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-plus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-root-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-top-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\default\images\astreeview-vertical-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-bottom-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-checkbox-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-checkbox-half-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-checkbox-unchecked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-dragDrop-indicator1.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-dragDrop-indicator2.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-folder-open.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-folder.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-middle-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-minus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-node.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-plus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-root-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-top-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\images\astreeview-vertical-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\macOS\macOS.css" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-bottom-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-checkbox-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-checkbox-half-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-checkbox-unchecked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-dragDrop-indicator1.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-dragDrop-indicator2.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-folder-open.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-folder.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-middle-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-minus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-node.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-plus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-root-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-top-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\images\astreeview-vertical-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\right-left\right-left.css" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-bottom-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-checkbox-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-checkbox-half-checked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-checkbox-unchecked.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-dragDrop-indicator1.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-dragDrop-indicator2.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-folder-open.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-folder.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-middle-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-minus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-node.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-plus.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-root-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-top-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\images\astreeview-vertical-line.gif" />
+    <Content Include="AdsSpritAdmin\Javascript\astreeview\themes\vista\vista.css" />
+    <Content Include="AdsSpritAdmin\Javascript\contextmenu\contextmenu.css" />
+    <Content Include="AdsSpritAdmin\Javascript\contextmenu\contextmenu_packed.js" />
+    <Content Include="AdsSpritAdmin\Js\ASPSnippets_Pager.min.js" />
+    <Content Include="AdsSpritAdmin\Js\bootstrap.min.js" />
+    <Content Include="AdsSpritAdmin\Js\custom-scripts.js" />
+    <Content Include="AdsSpritAdmin\Js\jquery-1.10.2.js" />
+    <None Include="AdsSpritAdmin\Js\jquery-1.4.1-vsdoc.js" />
+    <Content Include="AdsSpritAdmin\Js\jquery-1.4.1.js" />
+    <Content Include="AdsSpritAdmin\Js\jquery-ui.js" />
+    <Content Include="AdsSpritAdmin\Js\jquery.metisMenu.js" />
+    <Content Include="AdsSpritAdmin\Js\morris.js" />
+    <Content Include="AdsSpritAdmin\Js\raphael-2.1.0.min.js" />
+    <Content Include="AdsSpritAdmin\Js\Validation.js" />
+    <Content Include="AdsSpritAdmin\Js\wysiwyg.js" />
+    <Content Include="AdsSpritAdmin\LogOut.aspx" />
+    <Content Include="AdsSpritAdmin\popups\about.html" />
+    <Content Include="AdsSpritAdmin\popups\about_license.html" />
+    <Content Include="AdsSpritAdmin\popups\about_license1.html" />
+    <Content Include="AdsSpritAdmin\popups\create_table.html" />
+    <Content Include="AdsSpritAdmin\popups\insert_hyperlink.aspx" />
+    <Content Include="AdsSpritAdmin\popups\insert_hyperlink.html" />
+    <Content Include="AdsSpritAdmin\popups\insert_image.aspx" />
+    <Content Include="AdsSpritAdmin\popups\insert_image.html" />
+    <Content Include="AdsSpritAdmin\popups\license.html" />
+    <Content Include="AdsSpritAdmin\popups\license1.html" />
+    <Content Include="AdsSpritAdmin\popups\select_color.html" />
+    <Content Include="AdsSpritAdmin\styles\styles.css" />
+    <Content Include="index.aspx" />
+    <Content Include="Infrastructure.aspx" />
+    <Content Include="international-business.aspx" />
+    <Content Include="Intro.aspx" />
+    <Content Include="media-details.aspx" />
+    <Content Include="media.aspx" />
+    <Content Include="our-story.aspx" />
+    <Content Include="product-details.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="thankyou.aspx" />
+    <Content Include="Values.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdsSpritAdmin\AddUpdAwards.aspx.cs">
+      <DependentUpon>AddUpdAwards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdAwards.aspx.designer.cs">
+      <DependentUpon>AddUpdAwards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdBanner.aspx.cs">
+      <DependentUpon>AddUpdBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdBanner.aspx.designer.cs">
+      <DependentUpon>AddUpdBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdCategory.aspx.cs">
+      <DependentUpon>AddUpdCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdCategory.aspx.designer.cs">
+      <DependentUpon>AddUpdCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdCockTails.aspx.cs">
+      <DependentUpon>AddUpdCockTails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdCockTails.aspx.designer.cs">
+      <DependentUpon>AddUpdCockTails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdJob.aspx.cs">
+      <DependentUpon>AddUpdJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdJob.aspx.designer.cs">
+      <DependentUpon>AddUpdJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdLeadershipData.aspx.cs">
+      <DependentUpon>AddUpdLeadershipData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdLeadershipData.aspx.designer.cs">
+      <DependentUpon>AddUpdLeadershipData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdProductData.aspx.cs">
+      <DependentUpon>AddUpdProductData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdProductData.aspx.designer.cs">
+      <DependentUpon>AddUpdProductData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdProductDetail.aspx.cs">
+      <DependentUpon>AddUpdProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdProductDetail.aspx.designer.cs">
+      <DependentUpon>AddUpdProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSize.aspx.cs">
+      <DependentUpon>AddUpdSize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSize.aspx.designer.cs">
+      <DependentUpon>AddUpdSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSpiritsSource.aspx.cs">
+      <DependentUpon>AddUpdSpiritsSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSpiritsSource.aspx.designer.cs">
+      <DependentUpon>AddUpdSpiritsSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSubCategory.aspx.cs">
+      <DependentUpon>AddUpdSubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdSubCategory.aspx.designer.cs">
+      <DependentUpon>AddUpdSubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdValues.aspx.cs">
+      <DependentUpon>AddUpdValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\AddUpdValues.aspx.designer.cs">
+      <DependentUpon>AddUpdValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Coktails.aspx.cs">
+      <DependentUpon>Coktails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Coktails.aspx.designer.cs">
+      <DependentUpon>Coktails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\LeadrCategory.aspx.cs">
+      <DependentUpon>LeadrCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\LeadrCategory.aspx.designer.cs">
+      <DependentUpon>LeadrCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageAwards.aspx.cs">
+      <DependentUpon>ManageAwards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageAwards.aspx.designer.cs">
+      <DependentUpon>ManageAwards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageBanner.aspx.cs">
+      <DependentUpon>ManageBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageBanner.aspx.designer.cs">
+      <DependentUpon>ManageBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageCockTails.aspx.cs">
+      <DependentUpon>ManageCockTails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageCockTails.aspx.designer.cs">
+      <DependentUpon>ManageCockTails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageContact.aspx.cs">
+      <DependentUpon>ManageContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageContact.aspx.designer.cs">
+      <DependentUpon>ManageContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageJob.aspx.cs">
+      <DependentUpon>ManageJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageJob.aspx.designer.cs">
+      <DependentUpon>ManageJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageJobEnquiry.aspx.cs">
+      <DependentUpon>ManageJobEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageJobEnquiry.aspx.designer.cs">
+      <DependentUpon>ManageJobEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Manageleader.aspx.cs">
+      <DependentUpon>Manageleader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Manageleader.aspx.designer.cs">
+      <DependentUpon>Manageleader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageLeaderData.aspx.cs">
+      <DependentUpon>ManageLeaderData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageLeaderData.aspx.designer.cs">
+      <DependentUpon>ManageLeaderData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageProductCategory.aspx.cs">
+      <DependentUpon>ManageProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageProductCategory.aspx.designer.cs">
+      <DependentUpon>ManageProductCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageProductData.aspx.cs">
+      <DependentUpon>ManageProductData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageProductData.aspx.designer.cs">
+      <DependentUpon>ManageProductData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSize.aspx.cs">
+      <DependentUpon>ManageSize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSize.aspx.designer.cs">
+      <DependentUpon>ManageSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSpiritSource.aspx.cs">
+      <DependentUpon>ManageSpiritSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSpiritSource.aspx.designer.cs">
+      <DependentUpon>ManageSpiritSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSubCategory.aspx.cs">
+      <DependentUpon>ManageSubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\ManageSubCategory.aspx.designer.cs">
+      <DependentUpon>ManageSubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpirit.Master.cs">
+      <DependentUpon>AdsSpirit.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpirit.Master.designer.cs">
+      <DependentUpon>AdsSpirit.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Brands.aspx.cs">
+      <DependentUpon>Brands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brands.aspx.designer.cs">
+      <DependentUpon>Brands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrer.aspx.cs">
+      <DependentUpon>Carrer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrer.aspx.designer.cs">
+      <DependentUpon>Carrer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csr.aspx.cs">
+      <DependentUpon>csr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csr.aspx.designer.cs">
+      <DependentUpon>csr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\HeaderRight.ascx.cs">
+      <DependentUpon>HeaderRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\HeaderRight.ascx.designer.cs">
+      <DependentUpon>HeaderRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\popups\insert_hyperlink.aspx.cs">
+      <DependentUpon>insert_hyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\popups\insert_hyperlink.aspx.designer.cs">
+      <DependentUpon>insert_hyperlink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\popups\insert_image.aspx.cs">
+      <DependentUpon>insert_image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdsSpritAdmin\popups\insert_image.aspx.designer.cs">
+      <DependentUpon>insert_image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure.aspx.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Infrastructure.aspx.designer.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="international-business.aspx.cs">
+      <DependentUpon>international-business.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="international-business.aspx.designer.cs">
+      <DependentUpon>international-business.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.aspx.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intro.aspx.designer.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="media-details.aspx.cs">
+      <DependentUpon>media-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="media-details.aspx.designer.cs">
+      <DependentUpon>media-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="media.aspx.cs">
+      <DependentUpon>media.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="media.aspx.designer.cs">
+      <DependentUpon>media.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="our-story.aspx.cs">
+      <DependentUpon>our-story.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="our-story.aspx.designer.cs">
+      <DependentUpon>our-story.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product-details.aspx.cs">
+      <DependentUpon>product-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product-details.aspx.designer.cs">
+      <DependentUpon>product-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="thankyou.aspx.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thankyou.aspx.designer.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Values.aspx.cs">
+      <DependentUpon>Values.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Values.aspx.designer.cs">
+      <DependentUpon>Values.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Component\Component.csproj">
+      <Project>{4a1cef5c-27c5-4966-a544-e189b3cc4fd5}</Project>
+      <Name>Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{9c20a5c3-86f2-44dc-bfcf-0660e767825a}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\html\FileContentIndex\merges\" />
+    <Folder Include="AdsSpritImages\AwardsImage\" />
+    <Folder Include="AdsSpritImages\BannerImages\" />
+    <Folder Include="AdsSpritImages\CategoryImages\" />
+    <Folder Include="AdsSpritImages\CockTailImages\" />
+    <Folder Include="AdsSpritImages\LeaderImage\" />
+    <Folder Include="AdsSpritImages\ProductImages\" />
+    <Folder Include="AdsSpritImages\Resume\" />
+    <Folder Include="AdsSpritImages\SpiritSourceImage\" />
+    <Folder Include="AdsSpritImages\SubCategoryImages\" />
+    <Folder Include="AdsSpritImages\temp\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38127</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:38127/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
